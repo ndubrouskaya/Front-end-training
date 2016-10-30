@@ -1,0 +1,31 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container-big {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header-main {
+  padding: 20px;
+  background-color: #1f4061;
+  color:  #d1e0e0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.column {
+  width: 200px;
+  display: inline-block;
+  background-color: #76a2a2;
+  color: #fff;
+  padding: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
