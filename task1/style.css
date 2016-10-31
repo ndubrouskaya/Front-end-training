@@ -1,31 +1,131 @@
+body {
+    height: 200vh;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #999966;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.wrapper-abs {
+    position: relative;
+}
+
 .container {
-  width: 800px;
-  margin: 0 auto;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .container-big {
-  width: 960px;
-  margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*HEADER*/
+
+header {
+    margin-bottom: 50px;
+    font-family: 'Pacifico', cursive;
 }
 
 .header-main {
-  padding: 20px;
-  background-color: #1f4061;
-  color:  #d1e0e0;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+    padding: 10px 30px;
+    background-color: #d6d6c2;
+}
+
+.header-main a, .header-main a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*COLUMNS*/
+
+.columns {
+    margin-bottom: 20px;
 }
 
 .column {
-  width: 200px;
-  display: inline-block;
-  background-color: #76a2a2;
-  color: #fff;
-  padding: 20px;
-  margin-right: 20px;
-  text-align: justify;
+    width: 200px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px;
+    background-color: #f5f5f0;
+    text-align: justify;
+    font-size: 16px;
 }
 
 .column:last-child {
-  margin-right: 0;
+    margin-right: 0;
+}
+
+.icon {
+    text-align: center;
+}
+
+
+/*QUOTES*/
+
+.quotes {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-quote-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.source {
+    float: right;
+}
+
+
+/*GALLERY*/
+
+.gallery {
+    padding-top: 50px;
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+.foto {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.foto:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+/*FOOTER*/
+
+footer {
+    padding: 30px 0;
+    background-color: #d6d6c2;
+}
+
+.copyrights {
+    margin: 0 auto;
 }
