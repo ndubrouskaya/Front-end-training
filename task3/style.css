@@ -1,0 +1,84 @@
+html, body{
+  height:100%;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("images/plane.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    height:100%;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.images {
+    margin-bottom: 50px;
+}
+
+img {
+    padding: 5px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 25px;
+}
+
+img:last-child {
+    margin-right: 0;
+}
+
+.table-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.flights {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.flights caption {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th:first-child, td:first-child {
+    padding-left: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(224, 235, 235, 0.5);
+    ;
+}

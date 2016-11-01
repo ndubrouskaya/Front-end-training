@@ -1,5 +1,11 @@
 body {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 h1 {
