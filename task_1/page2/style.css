@@ -1,41 +1,44 @@
 body {
-  background-image: url("images/bg.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 h1 {
-  font-family: 'Amaranth', sans-serif;
+    font-family: 'Amaranth', sans-serif;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
 }
 
 header {
-  border-bottom: 2px solid grey;
-
+    border-bottom: 2px solid grey;
 }
 
 article {
-  text-align: justify;
+    text-align: justify;
 }
 
 img {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .left {
-  float: left;
-  margin-right: 20px;
+    float: left;
+    margin-right: 20px;
 }
 
 .right {
-  float: right;
-  margin-left: 20px;
+    float: right;
+    margin-left: 20px;
+}
+
+footer {
+    border-top: 2px solid grey;
 }

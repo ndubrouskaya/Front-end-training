@@ -29,7 +29,6 @@ body {
     clear: both;
 }
 
-
 /*HEADER*/
 
 header {
@@ -46,7 +45,6 @@ header {
     text-decoration: none;
     color: inherit;
 }
-
 
 /*COLUMNS*/
 
@@ -75,7 +73,6 @@ header {
     text-align: center;
 }
 
-
 /*QUOTES*/
 
 .quotes {
@@ -99,7 +96,6 @@ header {
     float: right;
 }
 
-
 /*GALLERY*/
 
 .gallery {
@@ -117,7 +113,6 @@ header {
 .foto:nth-child(4n) {
     margin-right: 0;
 }
-
 
 /*FOOTER*/
 
