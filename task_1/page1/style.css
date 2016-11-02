@@ -1,5 +1,4 @@
 body {
-    height: 200vh;
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
     color: #999966;
@@ -7,10 +6,6 @@ body {
 
 .wrapper {
     min-height: 100vh;
-}
-
-.wrapper-abs {
-    position: relative;
 }
 
 .container {
@@ -37,13 +32,40 @@ header {
 }
 
 .header-main {
-    padding: 10px 30px;
+    padding: 30px;
     background-color: #d6d6c2;
 }
 
 .header-main a, .header-main a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+}
+
+.pages {
+  min-width: 100px;
+  float: right;
+}
+
+.pages  ul {
+  list-style: none;
+}
+
+.pages li {
+  display: inline-block;
+}
+
+.pages a {
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0 10px;
+}
+
+.pages a:hover {
+  color: #4d3319;
 }
 
 /*COLUMNS*/
