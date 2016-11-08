@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/*HEADER*/
+
+header {
+    background: #111a29;
+}
+.header-content {
+    color: white;
+    background-image: url('images/header-bg.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 250px;
+}
+.meeting-info {
+    height: 243px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.meeting-info h1 {
+    vertical-align: middle;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.meeting-info .meeting-address {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.meeting-info .meeting-date {
+    font-size: 16px;
+}
+
+/*MAIN*/
+
+.main {
+    background: #e3f1f9;
+    padding-bottom: 40px;
+}
+.step-number {
+    min-height: 35px;
+    padding: 20px 0;
+    background: #bfd4de;
+}
+.step-header h2 {
+    padding-left: 50px;
+    margin: 0;
+    color: #364654;
+}
+.form-block {
+    background: white;
+    padding: 30px 50px;
+}
+.form-block .form-note {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+td {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+td:nth-child(even) {
+}
+td:nth-child(odd) {
+}
+label {
+    min-width: 150px;
+    text-align: right;
+}
+label.required:after {
+    content: "*";
+}
+input,
+select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    width: 230px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+/* TODO: inset box sHADOW */
+}
+.form-block .btn {
+    clear: both;
+    display: block;
+    width: 120px;
+    padding: 15px;
+    background: #364654;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+/*FOOTER*/
+/* TODO: TO BOTTOM */
+footer {
+    background: #364654;
+    min-height: 30px;
+    padding: 20px 0;
+    color: white;
+}
+footer .copy {
+    float: left;
+}
+footer .copy  p{
+    margin: 0;
+}
+footer .add-info {
+    float: right;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+.add-info a {
+    border-bottom: 1px dotted white;
+    margin-right: 15px;
+}
+.add-info a:last-child {
+    margin-right: 0;
+}
