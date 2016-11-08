@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico.ttf');
+}
+
 body {
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
@@ -42,31 +52,32 @@ header {
 }
 
 .logo {
-  float: left;
-  margin: 0;
+    float: left;
+    margin: 0;
 }
 
 .pages {
-  min-width: 100px;
-  float: right;
+    min-width: 100px;
+    float: right;
 }
 
-.pages  ul {
-  list-style: none;
+.pages ul {
+    list-style: none;
 }
 
 .pages li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .pages a {
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0 10px;
 }
 
 .pages a:hover {
-  color: #4d3319;
+    color: #4d3319;
 }
+
 
 /*COLUMNS*/
 
@@ -76,7 +87,7 @@ header {
 
 .column {
     width: 200px;
-    height: 500px;
+    min-height: 520px;
     display: inline-block;
     vertical-align: top;
     padding: 20px;
@@ -94,6 +105,7 @@ header {
 .icon {
     text-align: center;
 }
+
 
 /*QUOTES*/
 
@@ -118,6 +130,7 @@ header {
     float: right;
 }
 
+
 /*GALLERY*/
 
 .gallery {
@@ -135,6 +148,7 @@ header {
 .foto:nth-child(4n) {
     margin-right: 0;
 }
+
 
 /*FOOTER*/
 

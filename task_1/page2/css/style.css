@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Amaranth';
+    src: url('fonts/Amarath-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.ttf');
+}
+
 body {
-    background-image: url("images/bg.jpg");
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;

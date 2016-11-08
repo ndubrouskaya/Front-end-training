@@ -1,5 +1,7 @@
-html, body{
-  height:100%;
+@font-face {
+    font-family: 'Catamaran';
+    src: url('fonts/Catamaran-Regular.ttf'),
+         url('fonts/Catamaran-Bold.ttf');
 }
 
 body {
@@ -16,7 +18,7 @@ body {
     right: 0;
     left: 0;
     z-index: 1;
-    background-image: url("images/plane.png");
+    background-image: url("../images/plane.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
