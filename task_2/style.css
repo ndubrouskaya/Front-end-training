@@ -1,10 +1,13 @@
 body {
+    min-width: 1130px;
     margin: 0;
-    font-family: Verdana, Arial, sans-serif;
+    background-color: #e3f1f9;
+    font-family: 'Open Sans', sans-serif;
 }
-.wrapper {
+
+.container {
     margin: 0 auto;
-    max-width: 1000px;
+    width: 900px;
 }
 
 /*HEADER*/
@@ -12,120 +15,191 @@ body {
 header {
     background: #111a29;
 }
+
 .header-content {
-    color: white;
     background-image: url('images/header-bg.jpg');
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: auto 250px;
+    background-size: auto 180px;
+    color: #fff;
 }
+
 .meeting-info {
-    height: 243px;
+    height: 180px;
     display: table-cell;
     vertical-align: middle;
 }
+
 .meeting-info h1 {
-    vertical-align: middle;
-    font-size: 30px;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
 }
-.meeting-info .meeting-address {
+
+.meeting-address {
+    margin: 5px 0;
     font-size: 14px;
-    margin-bottom: 10px;
+    font-weight: 300;
+    color: #bfd4de;
     text-transform: uppercase;
 }
-.meeting-info .meeting-date {
-    font-size: 16px;
+
+.meeting-date {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
 }
+
 
 /*MAIN*/
 
 .main {
     background: #e3f1f9;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
+
 .step-number {
-    min-height: 35px;
-    padding: 20px 0;
     background: #bfd4de;
+    padding: 15px 0;
 }
-.step-header h2 {
+
+.step-number h2 {
     padding-left: 50px;
     margin: 0;
     color: #364654;
+    font-size: 20px;
 }
+
+
+/*FORM*/
+
 .form-block {
-    background: white;
-    padding: 30px 50px;
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    color: #364654;
 }
-.form-block .form-note {
+
+.form-note {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 35px;
     font-style: italic;
-    margin-bottom: 30px;
 }
-td {
+
+.column {
+    float: left;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+
+label {
     margin-bottom: 30px;
+    padding-right: 20px;
     font-size: 14px;
     font-weight: bold;
 }
-td:nth-child(even) {
+
+table {
+    border-collapse: collapse;
 }
+
+tr {
+    vertical-align: middle;
+    line-height: 35px;
+}
+
+td {
+    padding: 15px 0;
+}
+
 td:nth-child(odd) {
-}
-label {
-    min-width: 150px;
     text-align: right;
 }
+
 label.required:after {
     content: "*";
 }
+
 input,
 select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    height: 30px;
-    width: 230px;
+    height: 35px;
+    width: 245px;
     padding: 5px;
     border-radius: 2px;
-    border: 1px solid grey;
-/* TODO: inset box sHADOW */
+    border: 1px solid #ccc;
+    box-shadow: inset 1px 2px 2px #e0e0e0;
+    outline: none;
 }
+
+
+/*for IE10*/
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url("images/icon.png");
+    background-size: 20px 20px;
+    background-position: 215px;
+    background-repeat: no-repeat;
+}
+
 .form-block .btn {
     clear: both;
     display: block;
-    width: 120px;
-    padding: 15px;
-    background: #364654;
-    color: white;
-    text-transform: uppercase;
+    background-color: #364654;
+    margin-left: 35px;
+    padding: 0 15px;
+    border-radius: 3px;
     border: none;
+    color: #fff;
+    line-height: 35px;
+    text-transform: uppercase;
 }
 
+
 /*FOOTER*/
-/* TODO: TO BOTTOM */
+
 footer {
-    background: #364654;
     min-height: 30px;
-    padding: 20px 0;
-    color: white;
+    background-color: #364654;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 12px;
 }
-footer .copy {
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copy {
     float: left;
 }
-footer .copy  p{
+
+.copy p {
     margin: 0;
 }
-footer .add-info {
+
+.add-info {
     float: right;
 }
-footer a {
-    color: white;
-    text-decoration: none;
-}
+
 .add-info a {
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted #fff;
     margin-right: 15px;
 }
+
 .add-info a:last-child {
     margin-right: 0;
 }

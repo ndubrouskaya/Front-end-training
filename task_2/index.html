@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <!--[if IE 9]>
+        <style type="text/css">
+         select {
+          background-image: none; /* Для браузера IE9 */
+         }
+        </style>
+    <![endif]-->
+</head>
+
+<body>
     <header>
-        <div class="wrapper">
+        <div class="container">
             <div class="header-content">
                 <div class="meeting-info">
                     <h1>Welcome to Meeting Expo 2014</h1>
@@ -20,129 +30,150 @@
     <main>
         <div class="main">
             <div class="step-number">
-                <div class="wrapper">
-                    <h2>Registration step 2 of 3</h2>
+                <div class="container">
+                    <h2 class="step-header">Registration step 2 of 3</h2>
                 </div>
             </div>
-            <div class="wrapper">
+            <div class="container">
                 <div class="form-block">
                     <p class="form-note">This is the address where registration materials will be sent and the name that will appear on your badge.</p>
-                    <form action="#" method="post">
-                        <table>
-                            <tr>
-                                <td>
-                                    <label class="required" for="first-name">First Name</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="first-name" required>
-                                </td>
-                                <td>
-                                    <label class="required" for="last-name">Last Name</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="last-name" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="required" for="address-1">Mailing Address 1</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="address-1" required>
-                                </td>
-                                <td>
-                                    <label for="address-2">Mailing Address 2</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="address-2">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="required" for="city">City</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="city" required>
-                                </td>
-                                <td>
-                                    <label class="required" for="state">State</label>
-                                </td>
-                                <td>
-                                    <select id="state" required>
-                                        <option value="">&nbsp;</option>
-                                        <option value="Alabama">Alabama</option>
-                                        <option value="Alaska">Alaska</option>
+                    <form action="#" method="post" autocomplete="off">
+                        <div class="column">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="first-name">First Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="first-name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="address-1">Mailing Address 1</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="address-1" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="city">City</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="city" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="postal-code">Postal Code</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="postal-code" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="phone">Work Phone</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" id="phone" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="email">E-mail</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="email" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="department">Department</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="department">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="last-name">Last Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="last-name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="address-2">Mailing Address 2</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="address-2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="state">State</label>
+                                    </td>
+                                    <td>
+                                        <select id="state" required>
+                                            <option value="">&nbsp;</option>
+                                            <option value="Alabama">Alabama</option>
+                                            <option value="Alaska">Alaska</option>
                                     </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="required" for="postal-code">Postal Code</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="postal-code" required>
-                                </td>
-                                <td>
-                                    <label class="required" for="country">Country</label>
-                                </td>
-                                <td>
-                                    <select id="country" required>
-                                        <option value="">&nbsp;</option>
-                                        <option value="USA">USA</option>
-                                        <option value="Russia">Russia</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="required" for="phone">Work Phone</label>
-                                </td>
-                                <td>
-                                    <input type="tel" id="phone" required>
-                                </td>
-                                <td>
-                                    <label for="fax">Fax</label>
-                                </td>
-                                <td>
-                                    <input type="tel" id="fax">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="required" for="email">E-mail</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="email" required>
-                                </td>
-                                <td>
-                                    <label for="title">Title</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="title">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="department">Department</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="department">
-                                </td>
-                                <td>
-                                    <label for="company">Company</label>
-                                </td>
-                                <td>
-                                    <input type="text" id="company">
-                                </td>
-                            </tr>
-                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="required" for="country">Country</label>
+                                    </td>
+                                    <td>
+                                        <select id="country" required>
+                                            <option value="">&nbsp;</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Russia">Russia</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="fax">Fax</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" id="fax">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="title">Title</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="title">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="company">Company</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="company">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                         <button type="submit" class="btn">Next step</button>
                     </form>
                 </div>
             </div>
+        </div>
     </main>
     <footer>
-        <div class="wrapper">
+        <div class="container">
             <div class="copy">
                 <p>Copyright &copy; 1997-2013 <a href="#">Site.com</a></p>
             </div>
@@ -152,5 +183,6 @@
             </div>
         </div>
     </footer>
-  </body>
+</body>
+
 </html>
