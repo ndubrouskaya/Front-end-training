@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #323232;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3, a, ul, input, button, select, option {
+    padding: 0;
+    margin: 0;
+}
+
+input, select, option, button {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    width: 30%;
+}
+
+
+/*Top header*/
+
+.top-header {
+    background-color: #ecf0f1;
+    font-size: 14px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.support {
+    min-width: 150px;
+}
+
+.support-info {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.welcome {
+    min-width: 200px;
+}
+
+.welcome-message {
+    font-size: inherit;
+    text-align: center;
+}
+
+.user-settings {
+    min-width: 300px;
+    text-align: right;
+}
+
+.settings-list li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.settings-list li:hover {
+    background-color: #fb758d;
+    color: #fff;
+}
+
+.language-selector a {
+    display: inline-block;
+}
+
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.flag-uk {
+    background-image: url("../images/flag-uk.png");
+}
+
+.currency-sign {
+    margin-right: 5px;
+}
+
+.fa-sign-in {
+    margin-right: 5px;
+}
+
+
+/*Main header*/
+
+.main-header {
+    padding: 40px 0;
+}
+
+.search-block {
+    display: inline-block;
+    position: relative;
+    margin-top: 15px;
+    width: 370px;
+    padding: 10px;
+    border: 1px solid #ecf0f1;
+}
+
+.search-input {
+
+}
+
+.search-selector {}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+}
+
+.shopping-cart {
+    min-width: 160px;
+    margin-top: 10px;
+    text-align: right;
+    color: #000;
+}
+
+.shopping-cart a {}
+
+.fa-shopping-basket {
+    width: 43px;
+    height: 43px;
+    margin-right: 10px;
+    background-color: #fb758d;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+}
+
+.fa-shopping-basket:before {
+    line-height: 43px;
+    color: #fff;
+}
