@@ -47,11 +47,6 @@ input, select, option, button {
     justify-content: space-between;
 }
 
-.flex-item {
-    width: 30%;
-}
-
-
 /*Top header*/
 
 .top-header {
@@ -71,7 +66,7 @@ input, select, option, button {
 }
 
 .welcome {
-    min-width: 200px;
+    min-width: 370px;
 }
 
 .welcome-message {
@@ -124,17 +119,21 @@ input, select, option, button {
     padding: 40px 0;
 }
 
+.logo {
+  min-width: 170px;
+}
+
 .search-block {
     display: inline-block;
     position: relative;
     margin-top: 15px;
-    width: 370px;
+    min-width: 370px;
     padding: 10px;
     border: 1px solid #ecf0f1;
 }
 
 .search-input {
-
+    border-right: 1px solid #000;
 }
 
 .search-selector {}
@@ -145,7 +144,7 @@ input, select, option, button {
 }
 
 .shopping-cart {
-    min-width: 160px;
+    min-width: 200px;
     margin-top: 10px;
     text-align: right;
     color: #000;
