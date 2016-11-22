@@ -22,20 +22,27 @@
                 <ul class="settings-list">
                     <li class="settings-item language-selector">
                         <a href=""><i class="flag flag-uk"></i>English</a>
-                        <ul class="language-list hidden">
-                            <li>
-                                <a href=""><i class="flag flag-rus"></i>Russian</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown-lang hidden">
+                            <ul class="language-list">
+                                <li>
+                                    <a href=""><i class="flag flag-rus"></i>Russian</a>
+                                </li>
+                            </ul>
+                        </div>
                         <i class="fa fa-angle-down"></i>
                     </li>
                     <li class="settings-item currency-selector">
                         <a href=""><b class="currency-sign">$</b>USD</a>
-                        <ul class="currency-list hidden">
-                            <li>
-                                <a href="">RUB</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown-currency hidden">
+                            <ul class="currency-list">
+                                <li>
+                                    <a href=""><b class="currency-sign">$</b>USD</a>
+                                </li>
+                                <li>
+                                    <a href=""><b class="currency-sign"><i class="fa fa-rub"></i></b>RUB</a>
+                                </li>
+                            </ul>
+                        </div>
                         <i class="fa fa-angle-down"></i>
                     </li>
                     <li class="user-block">
@@ -59,10 +66,22 @@
                     <!-- add background image icon or &#xf142;-->
                     <input type="text" name="search-input" class="search-input" placeholder="Enter your keyword">
                     <button type="button" class="category-selector" title="All categories">
-                      <span>All categories</span>
+                        <span>All category</span>
                     </button>
+                    <div class="dropdown-category hidden">
+                        <ul class="category-list">
+                            <li>
+                                <a href="">All category</a>
+                            </li>
+                            <li>
+                                <a href="">Dresses</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <button type="button" class="search-btn" name="search-btn"><i class="fa fa-search"></i></button>
+                    <button type="button" class="search-btn" name="search-btn">
+                      <i class="fa fa-search"></i>
+                    </button>
                 </div>
             </div>
             <div class="shopping-cart">
