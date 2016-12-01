@@ -53,7 +53,6 @@ ul {
     justify-content: space-between;
 }
 
-
 /*Top header*/
 
 .top-header {
@@ -250,7 +249,7 @@ ul {
 }
 
 
-/*Aside*/
+/*sidebar*/
 
 .catalog-sidebar {
     width: 270px;
@@ -528,7 +527,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.sale-icon:before {
+.label:before {
   content: "";
   position: absolute;
   top: 10px;
@@ -536,15 +535,13 @@ ul {
   display: block;
   width: 10px;
   height: 2px;
-  background-color: #046e86;
 }
 
-.sale-icon {
+.label {
   position: absolute;
   top: 15px;
   left: 10px;
   min-width: 44px;
-  background-color: #046e86;
   line-height: 24px;
   color: #fff;
   font-size: 10px;
@@ -552,34 +549,42 @@ ul {
   text-transform: uppercase;
 }
 
+.label-sale:before {
+  background-color: #046e86;
+}
+
+.label-sale {
+  background-color: #046e86;
+}
+
+.label-new:before {
+  background-color: #faa202;
+}
+
+.label-new {
+  background-color: #faa202;
+}
+
 .product-img {
   overflow: hidden;
 }
 
 .product-img img {
-  width: 100%;
+  display: block;
+  height: 100%;
+  width: auto;
 }
 
 .product-info {
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 15px 20px;
   background-color: #046e84;
   text-align: center;
   color: #fff;
-}
-
-.product-title,
-.product-rate,
-.product-price,
-.deals-item-date {
-  margin-bottom: 15px;
+  line-height: 25px;
 }
 
 .deals-item .product-info {
   text-align: left;
-}
-
-.product-rate {
-  margin-bottom: 15px;
 }
 
 .product-rate i {
@@ -592,6 +597,15 @@ ul {
   margin-right: 5px;
   font-size: 14px;
   color: #da748c;
+}
+
+.price-sale:after {
+  content: "/";
+  padding-left: 5px;
+}
+
+.deals-item .price-sale:after {
+  content: none;
 }
 
 .price-real {
@@ -623,9 +637,14 @@ ul {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.promo-banner {
-  min-width: 570px;
+/*main-content*/
+
+.main-content {
   margin-left: 300px;
+}
+
+.promo-banner {
+  min-width: 730px;
   margin-bottom: 45px;
   padding: 60px;
   background-image: url(../images/bike1.jpg);
@@ -659,4 +678,104 @@ ul {
 
 .grid-column {
   width: 270px;
+}
+
+.catalog-panel {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.catalog-view,
+.catalog-sorter,
+.catalog-show {
+  float: left;
+}
+
+.catalog-pagination {
+  float: right;
+}
+
+.catalog-view {
+  min-width: 60px;
+  margin-right: 15px;
+}
+
+.catalog-view a {
+  display: block;
+  float: left;
+  width: 30px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  color: #171717;
+}
+
+.catalog-view a.active {
+  border-color: #000;
+  color: #fff;
+  background-color: #000;
+}
+
+.catalog-view a:not(.active):hover {
+  background-color: #e8e8e8;
+}
+
+.catalog-sorter {
+  min-width: 105px;
+}
+
+.sort-by-btn,
+.show-btn {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  margin-right: 5px;
+  padding-left: 15px;
+  padding-right: 10px;
+  line-height: 28px;
+  color: #171717;
+  cursor: pointer;
+}
+
+.sort-by-btn:hover,
+.show-btn:hover {
+  background-color: #e8e8e8;
+}
+
+.sort-by-btn .fa,
+.show-btn .fa {
+   padding-left: 5px;
+   color: #999;
+}
+
+.catalog-page {
+  display: inline-block;
+  width: 28px;
+  border: 1px solid #e8e8e8;
+  line-height: 28px;
+  text-align: center;
+}
+
+.catalog-page.prev,
+.catalog-page.next {
+  background-color: #171717;
+  border-color: #171717;
+  color: #fff;
+}
+
+.catalog-page.active,
+.catalog-page:not(.prev):not(.next):hover {
+  background-color: #fb758e;
+  border-color: #fb758e;
+  color: #fff;
+}
+
+.grid-column {
+  width: 270px;
+  margin-right: 20px;
+}
+
+.grid-column:last-child {
+  margin-right: 0;
 }
