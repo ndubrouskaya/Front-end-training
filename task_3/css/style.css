@@ -503,10 +503,8 @@ ul {
 *[class^="pagination-btn-"] {
   display: inline-block;
   width: 30px;
-  height: 30px;
   margin-right: 5px;
   border: 2px solid #252c32;
-  line-height: 30px;
   text-align: center;
 }
 
@@ -518,6 +516,12 @@ ul {
 
 .pagination-btn-next {
   margin-right: 0;
+}
+
+.deals-pagination .fa {
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .product-tile {
@@ -539,7 +543,7 @@ ul {
 
 .label {
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 10px;
   min-width: 44px;
   line-height: 24px;
@@ -576,7 +580,7 @@ ul {
 }
 
 .product-info {
-  padding: 20px 20px 15px 20px;
+  padding: 5px 20px;
   background-color: #046e84;
   text-align: center;
   color: #fff;
@@ -584,6 +588,7 @@ ul {
 }
 
 .deals-item .product-info {
+  padding-top: 15px;
   text-align: left;
 }
 
@@ -641,6 +646,7 @@ ul {
 
 .main-content {
   margin-left: 300px;
+  margin-bottom: 40px;
 }
 
 .promo-banner {
@@ -669,10 +675,11 @@ ul {
 
 .promo-banner-btn {
   display: inline-block;
-  padding: 0 30px;
+  padding: 0 35px;
   background-color: #fff;
   line-height: 46px;
   color: #333;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -689,6 +696,7 @@ ul {
 
 .catalog-pagination {
   float: right;
+  font-size: 0px;
 }
 
 .catalog-view {
@@ -748,8 +756,10 @@ ul {
 .catalog-page {
   display: inline-block;
   width: 28px;
+  margin-right: 10px;
   border: 1px solid #e8e8e8;
   line-height: 28px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -765,6 +775,10 @@ ul {
   background-color: #fb758e;
   border-color: #fb758e;
   color: #fff;
+}
+
+.catalog-page:last-child {
+  margin-right: 0;
 }
 
 .grid-column {
