@@ -775,19 +775,20 @@ ul {
     margin-right: 0;
 }
 
-.info-block {
+/*Additional*/
+.add-block {
     padding: 25px 0;
     background-color: #006579;
     color: #fff;
     text-align: center;
 }
 
-.info-title {
+.add-title {
     margin-bottom: 25px;
     font-size: 14px;
 }
 
-.info-title .fa {
+.add-title .fa {
     margin-right: 5px;
 }
 
@@ -810,6 +811,7 @@ ul {
     background-color: #fff;
     border-left: 2px solid #fb758d;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .hotline-tel {
@@ -830,4 +832,16 @@ ul {
 
 .payments-icon img {
     width: 100%;
+}
+
+/*Main footer*/
+
+.main-footer {
+  background-color: #23282e;
+  color: #fff;
+}
+
+.copyrights {
+  background-color: #272c32;
+  color: #fff;
 }
