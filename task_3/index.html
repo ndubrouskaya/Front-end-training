@@ -13,13 +13,13 @@
     <!-- Top header -->
     <div class="top-header clearfix">
         <div class="wrapper flex-wrapper">
-            <div class="support">
+            <div class="support column">
                 <a class="" href=""><i class="fa fa-phone"></i> 24/7 Free Support</a>
             </div>
-            <div class="welcome">
+            <div class="welcome column">
                 <h3 class="welcome-message">Default welcome message!</h3>
             </div>
-            <div class="user-settings">
+            <div class="user-settings column">
                 <ul class="settings-list">
                     <li class="settings-item language-selector">
                         <a href=""><i class="flag flag-uk"></i>English</a>
@@ -57,14 +57,13 @@
     <!-- Main header -->
     <div class="main-header clearfix">
         <div class="wrapper flex-wrapper">
-            <div class="logo">
+            <div class="logo column">
                 <a href="#">
                     <img src="images/logo.png" alt="eShop" width="122" height="69">
                 </a>
             </div>
-            <div class="search-wrapper">
-                <div class="search-block">
-                    <!-- add background image icon or &#xf142;-->
+            <div class="search-wrapper ">
+                <div class="search-block column">
                     <input type="text" name="search-input" class="search-input" placeholder="&#8286;&emsp;Enter your keyword">
                     <button type="button" class="category-selector" title="All category">
                         <span>All category</span>
@@ -79,13 +78,12 @@
                             </li>
                         </ul>
                     </div>
-
                     <button type="button" class="search-btn" name="search-btn" title="Search">
                       <i class="fa fa-search"></i>
                     </button>
                 </div>
             </div>
-            <div class="shopping-cart">
+            <div class="shopping-cart column">
                 <a href="">
                     <i class="fa fa-shopping-basket"></i>Shopping cart(0)
                 </a>
@@ -138,11 +136,12 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Sidebar -->
             <div class="catalog-sidebar">
                 <div class="categories-sidebar">
                     <h2 class="categories-title">
-                        <i class="fa fa-list-ul"></i>
-                        Categories
+                        <i class="fa fa-list-ul"></i>Categories
                     </h2>
                     <ul class="categories-list">
                         <li class="categories-item">
@@ -293,6 +292,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Catalog -->
             <div class="main-content">
                 <div class="promo-banner">
                     <h2 class="promo-banner-title">Women collection</h2>
@@ -595,32 +596,57 @@
                 </div>
             </div>
         </div>
+        <!-- Info -->
+        <div class="info-block">
+            <div class="wrapper flex-wrapper">
+                <div class="newsletter column">
+                    <h3 class="info-title">Newsletter</h3>
+                    <div class="subscribe">
+                        <input type="text" class="subscribe-input" placeholder="Enter your email">
+                        <button type="button" class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+                <div class="hotline column">
+                    <h3 class="info-title"><i class="fa fa-phone-square"></i>Hot Line</h3>
+                    <div class="hotline-contacts">
+                        <p class="hotline-tel">+022-088456 24/7</p>
+                        <a href="mailto:support@eshop.com" class="hotline-email">support@eshop.com</a>
+                    </div>
+                </div>
+                <div class="payments column">
+                    <h3 class="info-title">Payment Options</h3>
+                    <div class="payments-types">
+                        <ul>
+                            <li class="payments-icon"><img src="images/payment-paypal.png" alt="PayPal"></li>
+                            <li class="payments-icon"><img src="images/payment-stripe.png" alt="Stripe"></li>
+                            <li class="payments-icon"><img src="images/payment-visa.png" alt="Visa"></li>
+                            <li class="payments-icon"><img src="images/payment-mastercard.png" alt="MasterCard"></li>
+                            <li class="payments-icon"><img src="images/payment-amex.png" alt="AmericanExpress"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
-          <div class="footer-info">
-            <div class="wrapper">
+            <div class="main-footer">
+                <div class="wrapper">
+                    <div class="follow-us"></div>
+                    <div class="footer-nav">
+                        <div class="footer-category-nav">
 
+                        </div>
+                        <div class="footer-info-nav">
 
+                        </div>
+                        <div class="footer-account-nav">
+
+                        </div>
+                    </div>
+                    <div class="contact-us">
+
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="main-footer">
-            <div class="wrapper">
-              <div class="follow-us"></div>
-              <div class="footer-nav">
-                <div class="footer-category-nav">
-
-                </div>
-                <div class="footer-info-nav">
-
-                </div>
-                <div class="footer-account-nav">
-                  
-                </div>
-              </div>
-              <div class="contact-us">
-
-              </div>
-            </div>
-          </div>
         </footer>
     </main>
 </body>

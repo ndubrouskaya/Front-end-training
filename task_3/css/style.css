@@ -53,6 +53,11 @@ ul {
     justify-content: space-between;
 }
 
+.column {
+    min-width: 370px;
+}
+
+
 /*Top header*/
 
 .top-header {
@@ -62,17 +67,9 @@ ul {
     vertical-align: middle;
 }
 
-.support {
-    min-width: 150px;
-}
-
 .support-info {
     line-height: 40px;
     vertical-align: middle;
-}
-
-.welcome {
-    min-width: 370px;
 }
 
 .welcome-message {
@@ -81,7 +78,6 @@ ul {
 }
 
 .user-settings {
-    min-width: 300px;
     text-align: right;
 }
 
@@ -125,15 +121,10 @@ ul {
     padding: 40px 0;
 }
 
-.logo {
-    min-width: 170px;
-}
-
 .search-block {
     display: inline-block;
     position: relative;
     margin-top: 15px;
-    width: 370px;
     border: 1px solid #ecf0f1;
     font-size: 0;
 }
@@ -176,7 +167,7 @@ ul {
 }
 
 .shopping-cart {
-    min-width: 200px;
+    /*min-width: 200px;*/
     margin-top: 10px;
     text-align: right;
     color: #000;
@@ -491,196 +482,197 @@ ul {
 }
 
 .deals-block {
-  position: relative;
+    position: relative;
 }
 
 .deals-pagination {
-  position: absolute;
-  right: 0;
-  top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 *[class^="pagination-btn-"] {
-  display: inline-block;
-  width: 30px;
-  margin-right: 5px;
-  border: 2px solid #252c32;
-  text-align: center;
+    display: inline-block;
+    width: 30px;
+    margin-right: 5px;
+    border: 2px solid #252c32;
+    text-align: center;
 }
 
 *[class^="pagination-btn-"]:hover {
-  background-color: #fb758d;
-  border-color: #fb758d;
-  color: #fff;
+    background-color: #fb758d;
+    border-color: #fb758d;
+    color: #fff;
 }
 
 .pagination-btn-next {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .deals-pagination .fa {
-  vertical-align: middle;
-  font-size: 20px;
-  line-height: 30px;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .product-tile {
-  position: relative;
-  max-width: 270px;
-  border: 1px solid #e8e8e8;
-  margin-bottom: 30px;
+    position: relative;
+    max-width: 270px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 30px;
 }
 
 .label:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -10px;
-  display: block;
-  width: 10px;
-  height: 2px;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    display: block;
+    width: 10px;
+    height: 2px;
 }
 
 .label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  min-width: 44px;
-  line-height: 24px;
-  color: #fff;
-  font-size: 10px;
-  text-align: center;
-  text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    min-width: 44px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .label-sale:before {
-  background-color: #046e86;
+    background-color: #046e86;
 }
 
 .label-sale {
-  background-color: #046e86;
+    background-color: #046e86;
 }
 
 .label-new:before {
-  background-color: #faa202;
+    background-color: #faa202;
 }
 
 .label-new {
-  background-color: #faa202;
+    background-color: #faa202;
 }
 
 .product-img {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .product-img img {
-  display: block;
-  height: 100%;
-  width: auto;
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 .product-info {
-  padding: 5px 20px;
-  background-color: #046e84;
-  text-align: center;
-  color: #fff;
-  line-height: 25px;
+    padding: 5px 20px;
+    background-color: #046e84;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
 }
 
 .deals-item .product-info {
-  padding-top: 15px;
-  text-align: left;
+    padding-top: 15px;
+    text-align: left;
 }
 
 .product-rate i {
-  margin-right: 5px;
-  color: #fe9a2b;
-  font-size: 12px;
+    margin-right: 5px;
+    color: #fe9a2b;
+    font-size: 12px;
 }
 
 .price-sale {
-  margin-right: 5px;
-  font-size: 14px;
-  color: #da748c;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #da748c;
 }
 
 .price-sale:after {
-  content: "/";
-  padding-left: 5px;
+    content: "/";
+    padding-left: 5px;
 }
 
 .deals-item .price-sale:after {
-  content: none;
+    content: none;
 }
 
 .price-real {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .deals-item-date {
-  color: #da748c;
+    color: #da748c;
 }
 
 .promo-offer {
-  position: relative;
+    position: relative;
 }
 
 .promo-btn {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  line-height: 36px;
-  padding: 0 35px;
-  background-color: transparent;
-  border: 2px solid #333;
-  color: #333;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    line-height: 36px;
+    padding: 0 35px;
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
 }
 
 .promo-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
 
 /*main-content*/
 
 .main-content {
-  margin-left: 300px;
-  margin-bottom: 40px;
+    margin-left: 300px;
+    margin-bottom: 40px;
 }
 
 .promo-banner {
-  min-width: 730px;
-  margin-bottom: 45px;
-  padding: 60px;
-  background-image: url(../images/bike1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
+    min-width: 730px;
+    margin-bottom: 45px;
+    padding: 60px;
+    background-image: url(../images/bike1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
 }
 
 .promo-banner-title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .promo-banner-text {
-  display: block;
-  max-width: 450px;
-  margin-bottom: 20px;
-  line-height: 20px;
+    display: block;
+    max-width: 450px;
+    margin-bottom: 20px;
+    line-height: 20px;
 }
 
 .promo-banner-btn {
-  display: inline-block;
-  padding: 0 35px;
-  background-color: #fff;
-  line-height: 46px;
-  color: #333;
-  font-size: 14px;
-  text-transform: uppercase;
+    display: inline-block;
+    padding: 0 35px;
+    background-color: #fff;
+    line-height: 46px;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .grid-column {
@@ -688,108 +680,158 @@ ul {
 }
 
 .catalog-panel {
-  overflow: hidden;
-  margin-bottom: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.catalog-view,
-.catalog-sorter,
-.catalog-show {
-  float: left;
+.catalog-view, .catalog-sorter, .catalog-show {
+    float: left;
 }
 
 .catalog-pagination {
-  float: right;
-  font-size: 0px;
+    float: right;
+    font-size: 0px;
 }
 
 .catalog-view {
-  min-width: 60px;
-  margin-right: 15px;
+    min-width: 60px;
+    margin-right: 15px;
 }
 
 .catalog-view a {
-  display: block;
-  float: left;
-  width: 30px;
-  border: 1px solid #e8e8e8;
-  box-sizing: border-box;
-  line-height: 30px;
-  vertical-align: middle;
-  text-align: center;
-  color: #171717;
+    display: block;
+    float: left;
+    width: 30px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    color: #171717;
 }
 
 .catalog-view a.active {
-  border-color: #000;
-  color: #fff;
-  background-color: #000;
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
 }
 
 .catalog-view a:not(.active):hover {
-  background-color: #e8e8e8;
+    background-color: #e8e8e8;
 }
 
 .catalog-sorter {
-  min-width: 105px;
+    min-width: 105px;
 }
 
-.sort-by-btn,
-.show-btn {
-  background-color: #fff;
-  border: 1px solid #e8e8e8;
-  margin-right: 5px;
-  padding-left: 15px;
-  padding-right: 10px;
-  line-height: 28px;
-  color: #171717;
-  cursor: pointer;
+.sort-by-btn, .show-btn {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    line-height: 28px;
+    color: #171717;
+    cursor: pointer;
 }
 
-.sort-by-btn:hover,
-.show-btn:hover {
-  background-color: #e8e8e8;
+.sort-by-btn:hover, .show-btn:hover {
+    background-color: #e8e8e8;
 }
 
-.sort-by-btn .fa,
-.show-btn .fa {
-   padding-left: 5px;
-   color: #999;
+.sort-by-btn .fa, .show-btn .fa {
+    padding-left: 5px;
+    color: #999;
 }
 
 .catalog-page {
-  display: inline-block;
-  width: 28px;
-  margin-right: 10px;
-  border: 1px solid #e8e8e8;
-  line-height: 28px;
-  font-size: 12px;
-  text-align: center;
+    display: inline-block;
+    width: 28px;
+    margin-right: 10px;
+    border: 1px solid #e8e8e8;
+    line-height: 28px;
+    font-size: 12px;
+    text-align: center;
 }
 
-.catalog-page.prev,
-.catalog-page.next {
-  background-color: #171717;
-  border-color: #171717;
-  color: #fff;
+.catalog-page.prev, .catalog-page.next {
+    background-color: #171717;
+    border-color: #171717;
+    color: #fff;
 }
 
-.catalog-page.active,
-.catalog-page:not(.prev):not(.next):hover {
-  background-color: #fb758e;
-  border-color: #fb758e;
-  color: #fff;
+.catalog-page.active, .catalog-page:not(.prev):not(.next):hover {
+    background-color: #fb758e;
+    border-color: #fb758e;
+    color: #fff;
 }
 
 .catalog-page:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .grid-column {
-  width: 270px;
-  margin-right: 20px;
+    width: 270px;
+    margin-right: 20px;
 }
 
 .grid-column:last-child {
-  margin-right: 0;
+    margin-right: 0;
+}
+
+.info-block {
+    padding: 25px 0;
+    background-color: #006579;
+    color: #fff;
+    text-align: center;
+}
+
+.info-title {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.info-title .fa {
+    margin-right: 5px;
+}
+
+.subscribe {
+    position: relative;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 42px;
+}
+
+.subscribe-btn {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    padding-left: 25px;
+    padding-right: 20px;
+    background-color: #fff;
+    border-left: 2px solid #fb758d;
+    line-height: 40px;
+}
+
+.hotline-tel {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.payments-types ul {
+    font-size: 0;
+}
+
+.payments-icon {
+    display: inline-block;
+    width: 42px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.payments-icon img {
+    width: 100%;
 }
