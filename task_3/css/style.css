@@ -783,9 +783,7 @@ ul {
     margin-right: 0;
 }*/
 
-
-/*Additional info*/
-
+/*Additional*/
 .add-info-block {
     padding: 25px 0;
     background-color: #006579;
@@ -793,12 +791,12 @@ ul {
     text-align: center;
 }
 
-.info-title {
+.add-info-title {
     margin-bottom: 25px;
     font-size: 14px;
 }
 
-.info-title .fa {
+.add-info-title .fa {
     margin-right: 5px;
 }
 
@@ -821,6 +819,7 @@ ul {
     background-color: #fff;
     border-left: 2px solid #fb758d;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .hotline-tel {
@@ -843,5 +842,14 @@ ul {
     width: 100%;
 }
 
-
 /*Footer*/
+
+.main-footer {
+  background-color: #23282e;
+  color: #fff;
+}
+
+.copyrights {
+  background-color: #272c32;
+  color: #fff;
+}
