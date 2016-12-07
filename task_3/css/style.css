@@ -1,14 +1,14 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.ttf');
-}
-
-body {
-    background-color: #fff;
-    margin: 0;
+html {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color: #323232;
+}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
 }
 
 a {
@@ -31,9 +31,8 @@ ul {
     list-style: none;
 }
 
-.wrapper {
-    max-width: 1170px;
-    min-width: 870px;
+.container {
+    width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -48,23 +47,32 @@ ul {
     display: none;
 }
 
-.flex-wrapper {
-    display: flex;
-    justify-content: space-between;
+*[class^="column-"], *[class*=' column-'] {
+    float: left;
+    padding: 0 15px;
+    margin: 0 -15px;
 }
 
-.column {
-    min-width: 370px;
+.column-1 {
+    width: 270px;
 }
 
+.column-2 {
+    width: 570px;
+}
+
+.column-3 {
+    width: 870px;
+}
 
 /*Top header*/
 
 .top-header {
+    padding: 10px 0;
     background-color: #ecf0f1;
     font-size: 14px;
-    line-height: 40px;
-    vertical-align: middle;
+    line-height: 20px;
+    /*vertical-align: middle;*/
 }
 
 .support-info {
@@ -78,6 +86,7 @@ ul {
 }
 
 .user-settings {
+    float: right;
     text-align: right;
 }
 
@@ -124,15 +133,17 @@ ul {
 .search-block {
     display: inline-block;
     position: relative;
+    left: 50%;
+    width: 370px;
     margin-top: 15px;
     border: 1px solid #ecf0f1;
     font-size: 0;
+    transform: translateX(-50%);
 }
 
 .search-input {
     width: 240px;
     padding-left: 15px;
-    line-height: 38px;
 }
 
 .category-selector:before {
@@ -167,7 +178,7 @@ ul {
 }
 
 .shopping-cart {
-    /*min-width: 200px;*/
+    float: right;
     margin-top: 10px;
     text-align: right;
     color: #000;
@@ -242,13 +253,7 @@ ul {
 
 /*sidebar*/
 
-.catalog-sidebar {
-    width: 270px;
-    float: left;
-}
-
 .categories-sidebar {
-    width: 100%;
     min-height: 370px;
     margin-bottom: 30px;
     background-color: #272c32;
@@ -377,7 +382,7 @@ ul {
     padding: 0 10px;
     border: 1px solid #e1e1e1;
     box-sizing: border-box;
-    line-height: 30px;
+    height: 30px;
     font-size: 12px;
 }
 
@@ -420,7 +425,7 @@ ul {
 .size-link:hover, .size-link.active {
     background-color: #fc768e;
     color: #fff;
-    border: none;
+    border-color: #fc768e;
 }
 
 .color-item {
@@ -637,12 +642,11 @@ ul {
 /*main-content*/
 
 .main-content {
-    margin-left: 300px;
     margin-bottom: 40px;
+    float: right;
 }
 
 .promo-banner {
-    min-width: 730px;
     margin-bottom: 45px;
     padding: 60px;
     background-image: url(../images/bike1.jpg);
@@ -676,7 +680,7 @@ ul {
 }
 
 .grid-column {
-  width: 270px;
+    /*width: 270px;*/
 }
 
 .catalog-panel {
@@ -770,16 +774,19 @@ ul {
     margin-right: 0;
 }
 
-.grid-column {
+/*.grid-column {
     width: 270px;
     margin-right: 20px;
-}
+}*/
 
-.grid-column:last-child {
+/*.grid-column:last-child {
     margin-right: 0;
-}
+}*/
 
-.info-block {
+
+/*Additional info*/
+
+.add-info-block {
     padding: 25px 0;
     background-color: #006579;
     color: #fff;
@@ -835,3 +842,6 @@ ul {
 .payments-icon img {
     width: 100%;
 }
+
+
+/*Footer*/
