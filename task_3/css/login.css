@@ -1,0 +1,137 @@
+/* login form */
+
+.modal-content {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    margin-top: 150px;
+    padding: 50px;
+    color: inherit;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+    z-index: 5;
+}
+
+.modal-content.register {
+  width: 500px;
+}
+
+.modal-content-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.modal-content-close:hover {
+    color: inherit;
+}
+
+.modal-content-title {
+  font-size: 0;
+}
+
+.modal-content-title li {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-sizing: border-box;
+    color: #ccc;
+}
+
+.modal-content-title li.active {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  color: #323232;
+}
+
+.modal-content-title h3 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="tel"],
+.login-form input[type="password"] {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 40px 10px 20px;
+    font-family: inherit;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: 1px solid #3b424c;
+}
+
+.register .registration-row {
+    font-size:0;
+}
+
+.register .login-form input,
+.register .login-form label {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.register .login-form label {
+  width: 30%;
+}
+
+.register .login-form label:after {
+  content: "\00a0*";
+}
+
+.register .login-form input {
+  width: 70%;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #323232;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background-color: #3b424c;
+}
+
+.remember-block {
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+.remember-block input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.remember-block label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
