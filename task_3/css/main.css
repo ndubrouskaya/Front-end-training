@@ -750,8 +750,8 @@ ul {
     text-transform: uppercase;
 }
 
-.grid-column {
-    /*width: 270px;*/
+.catalog-grid {
+    min-height: 1180px;
 }
 
 .catalog-panel {
