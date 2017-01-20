@@ -1,0 +1,12 @@
+.breadcrumbs {
+    margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+    display: inline-block;
+    color: darken($grey, 20%);
+}
+
+.breadcrumbs-link.active, .breadcrumbs-link:hover {
+    color: $dark-grey;
+}

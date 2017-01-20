@@ -1,0 +1,53 @@
+.account-info {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.account-data,
+.account-foto {
+    width: 100%;
+}
+
+.account-data {
+    min-height: 30px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 16px;
+
+    table {
+        margin-bottom: 20px;
+    }
+
+    td:first-child {
+        padding-right: 20px;
+    }
+}
+
+.account-data-title {
+    margin-bottom: 20px;
+}
+
+.account-foto img {
+    border-radius: 50%;
+    position: relative;
+    @include center;
+}
+
+.change-password {
+    text-decoration: underline;
+}
+
+.account-data-list .fa {
+    width: 25px;
+}
+
+.account-data a:hover {
+    color: $pink;
+}
+
+@media screen and (min-width: 768px) {
+    .account-data,
+    .account-foto {
+        width: 30%;
+    }
+}

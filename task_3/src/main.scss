@@ -1,0 +1,24 @@
+@import "_variables",
+        "_base",
+        "_mixins";
+
+@import "sections/_top-header",
+        "sections/_main-header",
+        "sections/_sidebar",
+        "sections/_main-content",
+        "sections/_add-info",
+        "sections/_footer";
+
+@import "blocks/_main-nav",
+        "blocks/_sidebar-nav",
+        "blocks/_filter",
+        "blocks/_deals",
+        "blocks/_advertise",
+        "blocks/_breadcrumbs",
+        "blocks/_promo-banner",
+        "blocks/_catalog-grid",
+        "blocks/_catalog-panel",
+        "blocks/_product-tile",
+        "blocks/_modal-form",
+        "blocks/_product-info",
+        "blocks/_account-info";

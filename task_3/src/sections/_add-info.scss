@@ -1,0 +1,88 @@
+.add-info-block {
+    padding: 25px 0;
+    background-color: $blue-marine;
+    color: $white;
+    text-align: center;
+}
+
+.add-info-block .flex-wrapper{
+    justify-content: space-around;
+}
+
+.add-info-title {
+    margin-bottom: 25px;
+    font-size: 14px;
+
+    .fa {
+        margin-right: 5px;
+    }
+}
+
+.subscribe {
+    position: relative;
+    width: 370px;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 42px;
+}
+
+.subscribe-btn {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    padding-left: 25px;
+    padding-right: 20px;
+    background-color: $white;
+    border-left: 2px solid $pink;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.hotline {
+    width: 170px;
+    margin-top: 50px;
+}
+
+.hotline-tel {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.payments {
+    width: 370px;
+    margin-top: 50px;
+}
+
+.payments-types ul {
+    font-size: 0;
+}
+
+.payments-icon {
+    display: inline-block;
+    width: 42px;
+    height: 28px;
+    margin-right: 10px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hotline {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .payments {
+        margin-top: 0;
+    }
+
+    .add-info-block .flex-wrapper{
+        justify-content: space-between;;
+    }
+}

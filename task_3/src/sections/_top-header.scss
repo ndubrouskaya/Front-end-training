@@ -1,0 +1,103 @@
+.top-header {
+    background-color: $light-grey;
+    font-size: 14px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.support,
+.welcome,
+.user-block span  {
+    display: none;
+}
+
+.user-settings {
+    width: 100%;
+    text-align: right;
+}
+
+.user-settings-list li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.user-settings-item {
+    position: relative;
+}
+
+.user-settings-item button {
+    background-color: inherit;
+    color: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+.user-settings-list li:hover {
+    background-color: $pink;
+    color: $white;
+}
+
+.currency-list-dropdown,
+.language-list-dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #fff;
+    border: 1px solid #ecf0f1;
+    color: #000;
+}
+
+.currency-list-dropdown li,
+.language-list-dropdown li {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.flag-uk {
+    background-image: url("../../images/flag-uk.png");
+}
+
+.currency-sign {
+    font-weight: bold;
+}
+
+.currency-sign,
+.user-block .fa {
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .support,
+    .welcome {
+        display: block;
+    }
+
+    .user-block span {
+        display: inline;
+    }
+
+    .user-settings {
+        width: auto;
+        text-align: right;
+    }
+
+    .support-info {
+        width: 140px;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+
+    .welcome-message {
+        width: 200px;
+        font-size: inherit;
+        text-align: center;
+    }
+}

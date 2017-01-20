@@ -1,0 +1,27 @@
+.advertising-block {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .advertising-block {
+      display: block;
+        position: relative;
+    }
+
+    .advertising-btn {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        line-height: 36px;
+        padding: 0 35px;
+        background-color: transparent;
+        border: 2px solid $black;
+        color: $black;
+    }
+
+    .advertising-btn:hover {
+        background-color: transparentize($white, .9);
+    }
+}
