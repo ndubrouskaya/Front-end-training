@@ -16,7 +16,7 @@ a {
     color: inherit;
 }
 
-a, button, h2, h3, h5, input, option, p, select, ul {
+a, button, h2, h3, h4, h5, input, option, p, select, ul {
     padding: 0;
     margin: 0;
 }
@@ -253,11 +253,6 @@ ul {
 .shopping-cart .fa-shopping-basket:before {
     line-height: 43px;
     color: #fff;
-}
-
-.shopping-cart:hover {
-    transition: transform 0.5s;
-    transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -1587,4 +1582,95 @@ div [class^="footer-nav-"] {
   .account-foto, .account-data {
       width: 30%;
   }
+}
+
+.shopping-cart-widget {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    color: #272c32;
+}
+
+.shopping-cart-content {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.shopping-cart-content table {
+    border-collapse: collapse;
+}
+
+.shopping-cart-content td {
+    padding: 5px;
+}
+
+.shopping-cart-content tr {
+    border-bottom: 1px solid rgba(0, 101, 121, 0.5);
+    box-shadow: 0 4px 2px -2px rgba(0, 101, 121, 0.5);
+    transition: 0.3s;
+}
+
+.shopping-cart-content tr:hover {
+    border-color: #006579;
+    box-shadow: 0 4px 2px -2px #006579;
+}
+
+.shopping-cart-item img {
+    width: 100px;
+    height: auto;
+}
+
+.shopping-cart-item .details {
+    width: 130px;
+}
+
+.shopping-cart-item .details h4, .shopping-cart-item .details p {
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.shopping-cart-item .details:hover h4 {
+    color: #006579;
+}
+
+.shopping-cart-item .action {
+    width: 30px;
+    text-align: center;
+}
+
+.shopping-cart-item .action .delete-btn {
+    background-color: #fff;
+}
+
+.shopping-cart-item .action .fa {
+    color: #006579;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.shopping-cart-item .action .fa:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.shopping-cart-total {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    display: block;
+    text-align: center;
+    background-color: #006579;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #272c32;
 }
